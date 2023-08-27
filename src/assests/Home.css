@@ -1,0 +1,48 @@
+/* Home.css */
+.home {
+    background-color: #f7f9fc;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .home-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .home-description {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .home-title {
+      font-size: 2rem;
+    }
+    
+    .home-description {
+      font-size: 1rem;
+    }
+    
+    .cta-button {
+      font-size: 0.9rem;
+    }
+  }
+  
