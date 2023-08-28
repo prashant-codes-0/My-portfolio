@@ -1,0 +1,56 @@
+/* App.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Nunito', sans-serif;
+    
+
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin: 0;
+  }
+  
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: #333; /* Change color on hover */
+  }
+  
+  /* Additional styles for smooth scroll */
+  .scroll-link {
+    cursor: pointer;
+  }
+  
+  /* Apply these styles to the links within the sections */
+  .scroll-link a {
+    color: black;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .scroll-link a:hover {
+    color: #333; /* Change color on hover */
+  }
+  

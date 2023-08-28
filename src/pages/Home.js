@@ -1,26 +1,36 @@
+// Home.js
+
 import React from 'react';
-import Lottie from 'react-lottie';
-import animationData from '../assests/animation.json'; 
-// const animationData = 'https://gist.github.com/beginneralways/77a036b0d61b909c280f167ad10faf5a';
+import '../assests/Home.css'; // Import your styles
+import pic from '../assests/ss.jpg'
 
 
-// D:\VSCODEFILES\My-Portfolio\frontend\public\lottie\animation_lltozb7r.json
 
 const Home = () => {
-  const lottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-  };
-
   return (
-    <section className="home">
-      <div className="container">
-        <div className="content">
-          <h1 className="home-title">Welcome to My Portfolio</h1>
-          <p className="home-description">Specializing in Node.js and its libraries</p>
-          <Lottie options={lottieOptions} height={200} width={200} />
-          <button className="cta-button">View Projects</button>
+    <section className="home" id="home">
+      <div className="intro">
+        <div className="left-section">
+          <div className="profile-image">
+            <img src={pic} alt="Your Name" />
+          </div>
+        </div>
+        <div className="right-section">
+          <div className="intro-text">
+            <h2>Hello, I'm</h2>
+            <h1>Your Name</h1>
+          </div>
+          <div className="buttons">
+            <a href="path_to_your_cv.pdf" download>
+              <button className="cv-button">Download CV</button>
+            </a>
+            <a href="#contact">
+              <button className="contact-button">Contact</button>
+            </a>
+          </div>
+          <div className="contact-info">
+            {/* Add contact icons here */}
+          </div>
         </div>
       </div>
     </section>
@@ -28,3 +38,4 @@ const Home = () => {
 };
 
 export default Home;
+
