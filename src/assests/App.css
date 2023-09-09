@@ -1,0 +1,23 @@
+/* App.css */
+
+.navbar {
+  /* ... (other styles) */
+  margin-right: 2rem; /* Adjust margin for spacing */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center; /* Center align for smaller screens */
+    margin: 0; /* Remove margin */
+    background-color: #333; /* Change background color for visibility */
+    padding: 0.5rem; /* Reduce padding */
+  }
+  
+  .navbar ul {
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  .navbar li {
+    margin: 0.5rem 0; /* Add spacing between links */
+  }
+}

@@ -2,23 +2,24 @@
 
 .home {
   /* ... (other styles) */
-  padding: 4rem 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10%;
 }
 
 .intro {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 0.5rem;
   align-items: center;
 }
 
 .profile-image img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
 }
 
@@ -40,18 +41,30 @@
 
 .buttons {
   display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
+  flex-direction: row;
+  margin-top: 2rem;
+  
 }
 
-.cv-button,
-.contact-button {
+.cv-button {
   padding: 0.5rem 1rem;
   background-color: #333;
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
+  border-radius :12px;
+ 
+}
+.contact-bt{
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+  border-radius:12px;
+  
 }
 
 .contact-info {
@@ -60,6 +73,7 @@
 
 /* Additional styling for left and right sections */
 .left-section {
+  margin-top:35px;
   /* Add styles for the left section */
 }
 

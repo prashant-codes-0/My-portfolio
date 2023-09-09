@@ -18,14 +18,17 @@ const Home = () => {
         <div className="right-section">
           <div className="intro-text">
             <h2>Hello, I'm</h2>
-            <h1>Your Name</h1>
+            <h1>Prashant Kumar </h1>
+            <h1> Chaudhary</h1>
+            <p style={{ fontSize: 12 }}>Full Stack Web Developer</p>
+
           </div>
           <div className="buttons">
             <a href="path_to_your_cv.pdf" download>
               <button className="cv-button">Download CV</button>
             </a>
             <a href="#contact">
-              <button className="contact-button">Contact</button>
+              <button className="contact-bt">Contact</button>
             </a>
           </div>
           <div className="contact-info">
