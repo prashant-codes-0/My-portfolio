@@ -7,9 +7,15 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    console.log('MongoDB connected');
-  } catch (error) {
-    console.error('MongoDB connection failed', error);
+    mongoose.connection.on('connected', () => {
+  console.log('Connected to MongoDB');
+});
+
+
+     } catch (error) {
+    mongoose.connection.on('error', (err) => {
+  console.error('MongoDB connection error: ' + err);
+});
   }
 };
 
