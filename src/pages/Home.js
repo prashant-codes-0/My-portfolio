@@ -6,6 +6,7 @@ import pic from '../assests/ss.jpg'
 
 
 
+
 const Home = () => {
   return (
     <section className="home" id="home">

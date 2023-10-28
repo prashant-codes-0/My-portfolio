@@ -43,28 +43,16 @@
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
-  
 }
 
-.cv-button {
+.cv-button, .contact-bt {
   padding: 0.5rem 1rem;
   background-color: #333;
   color: #fff;
   border: none;
   cursor: pointer;
   margin: 0.5rem;
-  border-radius :12px;
- 
-}
-.contact-bt{
-  padding: 0.5rem 1rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  margin: 0.5rem;
-  border-radius:12px;
-  
+  border-radius: 12px;
 }
 
 .contact-info {
@@ -73,10 +61,34 @@
 
 /* Additional styling for left and right sections */
 .left-section {
-  margin-top:35px;
+  margin-top: 35px;
   /* Add styles for the left section */
 }
 
 .right-section {
   /* Add styles for the right section */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .intro {
+    grid-template-columns: 1fr; /* Display intro content in a single column */
+  }
+
+  .profile-image img {
+    width: 100%; /* Adjust the profile image size for smaller screens */
+    max-width: 200px; /* Set a maximum width */
+  }
+
+  .intro-text h2 {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+  }
+
+  .intro-text h1 {
+    font-size: 2rem; /* Adjust the font size for smaller screens */
+  }
+
+  .buttons {
+    flex-direction: column; /* Display buttons in a column for smaller screens */
+  }
 }
