@@ -1,4 +1,4 @@
-# My-portfolio
+# My-portfolio (MERN stack)
 # Getting Started with Create React App
 
 For the portfolio project !!!
